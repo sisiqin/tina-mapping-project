@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { db } = require('../db');
+const { GOOGLE_GEOCODING_API } = require('../../secret');
 const getGeo = require('@google/maps').createClient({
-    key: 'AIzaSyDWlULGSV3ZyNEQdsSpbpXa6zY9_gRu5To'
+    key: GOOGLE_GEOCODING_API
   });
 
 
