@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fefbd8;
+}
+
+input {
+  background-color: #f9f5ca;
+  border: 0px solid;
+  width: 50px;
+}
+
+/* 
+styling HOME PAGE 
+*/
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.nav {
+  margin-bottom: 20px;
+}
+
+.footer {
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+.btn-light {
+  height: 60px;
+  width: 130px;
+}
+
+.logo-image {
+  height: 120px;
+  margin-left: 50px;
+}
+
+.project-name {
+  margin-left: 65px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+/* 
+styling SETUP PAGE
+*/
+
+/* 
+styling TIMER PAGE
+*/
+
+.setup-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.setup-grindlevel {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  width: 125px;
+}
+.timer-countdown,
+.timer-water-amount {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.timer-start-btn,
+.setup-add-btn {
+  border-radius: 50%;
+  background-color: #deeaee;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.timer-min,
+.timer-sec,
+.timer-added-water {
+  font-size: 30px;
+}
+
+.history-filter {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 20px;
+  overflow: hidden;
+  width: 100px;
+  margin: 10px;
+  font-size: 10px;
+  margin-left: 130px;
+}
+
+.finish {
+  margin-top: 20px;
+}
+
+.finish-add-btn {
+  background-color: #deeaee;
+  height: 40px;
+  width: 70px;
+  margin-left: 80px;
+  margin-bottom: 100px;
+}
+
+.finish-comment {
+  margin-right: 15px;
+}
+
+.finish-comment-input {
+  width: 80px;
+}
+
+.history-records {
+  font-size: 11px;
+}
