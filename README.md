@@ -1,9 +1,5 @@
-# Coffee Timer
+# Mapping Project for Tina
 
-Fullstack Responsive Web App that displays timer and correlated water amount which should be added in the coffee filter
-
-## how to install: 
-* npm install
-* npm start 
+Fullstack Web App with Google API, did this for Tina's mapping project. 
 
 developed by: Xi Qin 
