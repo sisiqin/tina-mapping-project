@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import { fetchAllNpo }  from '../store';
 import GoogleMapReact from 'google-map-react';
 import OnePoint from './OnePoint';
+import {GOOGLE_MAP_API}  from '../../secret';
 
 
 const mapDispatchToProps = (dispatch) => ({
@@ -35,7 +36,7 @@ class Nabar extends React.Component {
             this.props.allnpo 
             ? (<div style={{ height: '100vh', width: '100%' }}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyAUs0_zXHXXInH_f3A2rmuLD_ZQ6G_k0RU',
+                    bootstrapURLKeys={{ key: GOOGLE_MAP_API,
                                         language: 'en' }}
                     defaultCenter={this.state.center}
                     defaultZoom={this.state.zoom}
