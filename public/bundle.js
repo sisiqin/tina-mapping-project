@@ -25002,11 +25002,11 @@ var _store2 = _interopRequireDefault(_store);
 
 var _reactRouterDom = __webpack_require__(71);
 
-var _timerStopwatch = __webpack_require__(900);
+var _timerStopwatch = __webpack_require__(901);
 
 var _timerStopwatch2 = _interopRequireDefault(_timerStopwatch);
 
-var _Finish = __webpack_require__(904);
+var _Finish = __webpack_require__(905);
 
 var _Finish2 = _interopRequireDefault(_Finish);
 
@@ -50487,11 +50487,11 @@ var _NavBar = __webpack_require__(521);
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
-var _Setup = __webpack_require__(899);
+var _Setup = __webpack_require__(900);
 
 var _Setup2 = _interopRequireDefault(_Setup);
 
-var _History = __webpack_require__(905);
+var _History = __webpack_require__(906);
 
 var _History2 = _interopRequireDefault(_History);
 
@@ -50589,7 +50589,7 @@ var _OnePoint = __webpack_require__(545);
 
 var _OnePoint2 = _interopRequireDefault(_OnePoint);
 
-var _secret = __webpack_require__(906);
+var _secret = __webpack_require__(899);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -70867,7 +70867,7 @@ var showCard = function showCard(npo) {
             _react2.default.createElement(
                 'h6',
                 null,
-                npo.org_name
+                npo.name
             )
         ),
         _react2.default.createElement(
@@ -70883,39 +70883,39 @@ var showCard = function showCard(npo) {
                 'p',
                 { className: 'card-text' },
                 'Mission Statement: ',
-                npo.mission_statement || "WE DO NOTHING---"
+                npo.missionstatement || "NAN"
             ),
             _react2.default.createElement(
                 'p',
                 { className: 'card-text' },
                 'Assets: ',
-                npo.assests || "SUPER RICH --- "
+                npo.assests || "NAN"
             ),
             _react2.default.createElement(
                 'p',
                 { className: 'card-text' },
                 'Gross Receipts: ',
-                npo.gross_receipts || "SUPER RICH --- "
+                npo.gross_receipts || "NAN"
             ),
             _react2.default.createElement(
                 'p',
                 { className: 'card-text' },
                 'Funded At: ',
-                npo.ruling_year || "JUST NOW"
+                npo.funded_year || "NAN"
             ),
             _react2.default.createElement(
                 'p',
                 { className: 'card-text' },
                 'CEO & gender: ',
-                npo.ceo_principle_officer,
+                npo.ceo || "NAN",
                 ' , ',
-                npo.gender_of_ceo || "AMAZING PERSON"
+                npo.gender_of_ceo || "NAN"
             ),
             _react2.default.createElement(
                 'p',
                 { className: 'card-text' },
                 'Cause Area: ',
-                npo.caouse_area || "WE DO EVERYTHING"
+                npo.cause_area || "NAN"
             ),
             _react2.default.createElement(
                 'p',
@@ -70927,7 +70927,13 @@ var showCard = function showCard(npo) {
                 'p',
                 { className: 'card-text' },
                 'IRS Filling Requirement: ',
-                npo.irs_filling_requirement || "I DONT EVEN KNOW WHAT THAT IS "
+                npo.irs_filling_year || "NAN"
+            ),
+            _react2.default.createElement(
+                'p',
+                { className: 'card-text' },
+                'IRS Filling Subsetion: ',
+                npo.irs_subsetion || "NAN"
             )
         )
     );
@@ -91077,6 +91083,18 @@ Feed.User = __WEBPACK_IMPORTED_MODULE_16__FeedUser__["a" /* default */];
 "use strict";
 
 
+var GOOGLE_MAP_API = 'AIzaSyAUs0_zXHXXInH_f3A2rmuLD_ZQ6G_k0RU';
+var GOOGLE_GEOCODING_API = 'AIzaSyDWlULGSV3ZyNEQdsSpbpXa6zY9_gRu5To';
+
+module.exports = { GOOGLE_GEOCODING_API: GOOGLE_GEOCODING_API, GOOGLE_MAP_API: GOOGLE_MAP_API };
+
+/***/ }),
+/* 900 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -91313,14 +91331,14 @@ var Setup = function (_React$Component) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Setup);
 
 /***/ }),
-/* 900 */
+/* 901 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Export lib/mongule
-module.exports = __webpack_require__(901);
+module.exports = __webpack_require__(902);
 
 /***/ }),
-/* 901 */
+/* 902 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Developed for TKD-Score-Server by Mick Crozier 2015
@@ -91328,8 +91346,8 @@ module.exports = __webpack_require__(901);
 
 
 
-var EventEmitter = __webpack_require__(902).EventEmitter;
-var _ = __webpack_require__(903);
+var EventEmitter = __webpack_require__(903).EventEmitter;
+var _ = __webpack_require__(904);
 
 
 
@@ -91561,7 +91579,7 @@ module.exports = Stopwatch;
 
 
 /***/ }),
-/* 902 */
+/* 903 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -91869,7 +91887,7 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 903 */
+/* 904 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -98663,7 +98681,7 @@ function isUndefined(arg) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)(module), __webpack_require__(47)))
 
 /***/ }),
-/* 904 */
+/* 905 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -98806,7 +98824,7 @@ var Finish = function (_React$Component) {
 exports.default = (0, _reactRouterDom.withRouter)((0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Finish));
 
 /***/ }),
-/* 905 */
+/* 906 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -98978,18 +98996,6 @@ var History = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(History);
-
-/***/ }),
-/* 906 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var GOOGLE_MAP_API = 'AIzaSyAUs0_zXHXXInH_f3A2rmuLD_ZQ6G_k0RU';
-var GOOGLE_GEOCODING_API = 'AIzaSyDWlULGSV3ZyNEQdsSpbpXa6zY9_gRu5To';
-
-module.exports = { GOOGLE_GEOCODING_API: GOOGLE_GEOCODING_API, GOOGLE_MAP_API: GOOGLE_MAP_API };
 
 /***/ })
 /******/ ]);

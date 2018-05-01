@@ -32,9 +32,9 @@ const addGeoLocation = addressArr => {
             if(!err) {
                 const wholeResult = res.json.results;
                 const geoLocation =  wholeResult[0].geometry.location;
-                const name = addressArr[i].org_name;
+                const name = addressArr[i].name;
                 console.log(geoLocation, name)
-                db.query(`update npo set geo_location = '${JSON.stringify(geoLocation)}' where org_name = '${name}';`)
+                db.query(`update npo set geo_location = '${JSON.stringify(geoLocation)}' where name = '${name}';`)
             }
             console.log("success!")
         })
