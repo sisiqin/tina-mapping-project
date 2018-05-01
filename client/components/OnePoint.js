@@ -53,18 +53,19 @@ export default connect()(OnePoint);
 const showCard = (npo) => (
   <div className="card" style={{width: "18rem", zIndex: 100}}>
   <div className="card-header text-center"> 
-  <h6>{npo.org_name}</h6>
+  <h6>{npo.name}</h6>
   </div> 
   <div className="card-body">
     <p className="card-text">EIN: {npo.ein}</p>
-    <p className="card-text">Mission Statement: {npo.mission_statement || "WE DO NOTHING---"}</p>
-    <p className="card-text">Assets: {npo.assests || "SUPER RICH --- "}</p>
-    <p className="card-text">Gross Receipts: {npo.gross_receipts || "SUPER RICH --- "}</p>
-    <p className="card-text">Funded At: {npo.ruling_year || "JUST NOW"}</p>
-    <p className="card-text">CEO & gender: {npo.ceo_principle_officer} , {npo.gender_of_ceo || "AMAZING PERSON"}</p>
-    <p className="card-text">Cause Area: {npo.caouse_area || "WE DO EVERYTHING"}</p>
+    <p className="card-text">Mission Statement: {npo.missionstatement || "NAN"}</p>
+    <p className="card-text">Assets: {npo.assests || "NAN"}</p>
+    <p className="card-text">Gross Receipts: {npo.gross_receipts || "NAN"}</p>
+    <p className="card-text">Funded At: {npo.funded_year || "NAN"}</p>
+    <p className="card-text">CEO & gender: {npo.ceo || "NAN"} , {npo.gender_of_ceo || "NAN"}</p>
+    <p className="card-text">Cause Area: {npo.cause_area || "NAN"}</p>
     <p className="card-text">NTEE Code: {npo.ntee_code}</p>
-    <p className="card-text">IRS Filling Requirement: {npo.irs_filling_requirement || "I DONT EVEN KNOW WHAT THAT IS "}</p>
+    <p className="card-text">IRS Filling Requirement: {npo.irs_filling_year || "NAN"}</p>
+    <p className="card-text">IRS Filling Subsetion: {npo.irs_subsetion || "NAN"}</p>
 
   </div>
 </div>
